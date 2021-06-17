@@ -1,7 +1,15 @@
+
+.header
+{
+	margin:40px 20px 0 20px;
+	font-size: 0;
+	line-height: 45px;
+}
+
 body
 {
 	background-color: orange;
-	background-image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ivdpgzB7T98KkMp6b7GBzAHaHa%26pid%3DApi&f=1;
+	background-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ivdpgzB7T98KkMp6b7GBzAHaHa%26pid%3DApi&f=1";
 }
 h1
 {
@@ -19,4 +27,39 @@ button
 {
 	color: #fff;
 	background-color: #025157
+}
+
+li
+{
+	display: inline;
+}
+
+.header > * {
+
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	height: 100%;
+	line-height: 45px;
+}
+
+.logo {
+
+	width: 15%;
+}
+
+.navbar {
+	width: 70%;
+	text-align: center;
+	color: red;
+}
+
+.actions {
+	width: 15%;
+	text-align: right;
+	font-size: 14px;
+}
+
+.navbar > * {
+	display: inline;
 }
