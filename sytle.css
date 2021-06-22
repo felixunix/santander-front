@@ -10,7 +10,7 @@
 
 body
 {
-	background-color: orange;
+	background-color: rgb(236, 157, 20);
 	background-image: "https://facebook.com";
 }
 h1
@@ -41,6 +41,16 @@ li
 	height: 100%;
 	line-height: 45px;
 }
+
+.fixed-header{
+	position: fixed;
+	background-color: white;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
 .logo {
 	width: 15%;
 }
@@ -86,4 +96,49 @@ li
 }
 .navbar > * {
 	display: inline;
-} 
+}
+
+.promo {
+	display: flex;
+	width: 70%;
+	margin: 100px auto;
+	align-items: center;
+}
+
+
+.publish h3 {
+	font-family: "Alegreyra", serif;
+	font-size: 40px;
+	line-height: 48px;
+	color: #025157;
+
+}
+
+.publish > p {
+	font-size:16 px;
+	color: #343434;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.publish > form{
+	display: flex;
+
+}
+.publish >form p{
+	color: #025157;
+	margin-right: 18px;
+}
+
+.explanatory-video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.explanatory-video img {
+	width: 120px;
+	margin-top: 10px;
+}
+
+
+
