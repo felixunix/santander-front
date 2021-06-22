@@ -10,8 +10,8 @@
 
 body
 {
-	background-color: rgb(236, 157, 20);
-	background-image: "https://facebook.com";
+	background-color: rgb(184, 182, 179);
+	background-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FpEfyA5O48FU%2Fmaxresdefault.jpg&f=1&nofb=1";
 }
 h1
 {
@@ -19,11 +19,11 @@ h1
 }
 h2
 {
-	color: #46484c;
+	color: #3e4c68;
 }
 p
 {
-	color: #8b8b8bcc;
+	color: #f1eded54;
 }
 button
 {
@@ -43,7 +43,7 @@ li
 }
 
 .fixed-header{
-	position: fixed;
+	position: left;
 	background-color: white;
 	top: 0;
 	left: 0;
