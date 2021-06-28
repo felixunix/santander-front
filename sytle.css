@@ -1,4 +1,4 @@
-body
+.body
 {
 	background-color:#fffbf7;
 	background-image: url('https://avatars2.githubusercontent.com/u/49173908?s=400&u=a96f8ae484776e568d23b4b00c8c298723aa4ba6&v=4');
@@ -7,22 +7,24 @@ body
 	font-family: "Opensans", sans-serif;
 
 }
-h1
+
+.h1
 {
 	color: blue;
 	text-align: center;
 }
-h2
+.h2
 {
 	color: #3e4c68;
 }
-p
+.p
 {
 	color: black;
 	font-family: verdana;
 	font-size: 20px;
 }
-button
+
+.button
 {
 	color: #fff;
 	background-color: #025157;
@@ -53,7 +55,7 @@ button
 	line-height: 45px;
 }
 
-li {
+.li {
 	display: inline;
 }
 
@@ -473,7 +475,7 @@ li {
 	/*gap: 1em;*/
 
 }
-/*falta revisar*/
+
 .work-matcha .pasos .tarjeta-pasos {
 	display: flex;
 	flex-wrap: wrap;
@@ -482,8 +484,6 @@ li {
 	margin-bottom: 20px;
 	flex-direction: row-reverse;
 	align-items: center;
-	/*width: 300px;
-	height: 800px;*/
 	position: relative;
 }
 
