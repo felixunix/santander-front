@@ -1,0 +1,22 @@
+{
+  "name": "santander-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixunix/santander-front.git"
+  },
+  "author": "Felipe Salinas Hdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixunix/santander-front/issues"
+  },
+  "homepage": "https://github.com/felixunix/santander-front#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
