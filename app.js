@@ -1,6 +1,6 @@
 $("[data-toggle=popover]").popover();
 
-const $forms = document.querySelectorAll(".signup-form")
+const forms = document.querySelectorAll(".signup-form")
 
 const geTemplate = () => {
     return fetch("./template.html")
@@ -8,7 +8,7 @@ const geTemplate = () => {
 }
 
 const sendEmailToApi = (address, template) => {
-    fetch(`https://bedu-email-sender-api.herokuapp.com/send`, {
+    fetch(`https://bedu-email-sender-api.herokuapp.com/send?id`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,10 +20,10 @@ const sendEmailToApi = (address, template) => {
     })
       .then((results) => {
         console.log(results.status);
-        if(results.status ==200){
+        if(results.status == 200){
             alert("E-mail send!!!")
         } else {
-            alert("send failed")
+            alert("Send failed")
         }
         document.getElementById("email").value = ""
         
@@ -55,15 +55,15 @@ function sendEmail(miVariable) {
     miVariable.preventDefault()
     const email = miVariable.target.querySelector("input").value
     getTemplate()
-      .then((response) => {
-        console.log(response);
+      .then((template) => {
+        sendEmailToApi(email, template)
       })
       .catch((error) => {
-        console.log(error, "error al obtener el templete");
+        console.log(error, "error al obtener el template");
       })
   }
 
-console.log($forms);
+//console.log($forms);
 
 for(let i = 0; i < forms.length; i++) {
     //console.log(forms[i]);
