@@ -1,22 +1,162 @@
 .body
 {
-	background-color:#fffbf7;
+	/*background-color:#fffbf7;
 	background-image: url('https://avatars2.githubusercontent.com/u/49173908?s=400&u=a96f8ae484776e568d23b4b00c8c298723aa4ba6&v=4');
 	background-size:contain;
 	background-position: center;
-	font-family: "Opensans", sans-serif;
+	font-family: "Opensans", sans-serif;*/
 
 }
+
+
+.betoc {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #0690ec, #505BDA);
+    position: relative;
+    overflow: hidden;
+}
+
+.betoc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  /* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 .h1
 {
 	color: blue;
 	text-align: center;
 }
+
 .h2
 {
 	color: #3e4c68;
 }
+
 .p
 {
 	color: black;
@@ -37,11 +177,21 @@
 	left: 0;
 	right: 0;
 }
+.practica {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	/*margin-top: 285px;*/
+	text-align: center;
+}
 
 .header {
-	margin:40px 20px 0 20px;
-	font-size: 0;
-	line-height: 45px;
+	margin-top: 40px; 
+	margin-left: 20px;
+	margin-right: 20px;
+	/*line-height: 45px;*/
 	font-size: 0;
 	height: 45px;
 	font-family: sans-serif;
@@ -64,19 +214,20 @@
 }
 
 .logo > img {
-	height: 25%;
+	height: 100%;
 
 }
 /*.navbar {
 	width: 70%;
 	text-align: center;
-	color: #025157;*/
+	color: #025157;
 }
+*/
 
 .menu-item {
-	display:inline;
+	display: inline;
 	margin-right: 25px;
-	margin-left: 25;
+	margin-left: 25px;
 }
 
 .actions {
@@ -149,20 +300,20 @@
 	display: grid;
 
 }
-.publish > form p{
+.publish > form p {
 	color: #025157;
 	margin-right: 18px;
 }
 /*aqui comienza work 4*/
 
 .features {
+	display: grid;
 	background-color: #025157;
 	padding: 5% 10%;
-	display: grid;
 	grid-template: repeat(2, 330px) / repeat(2, 1fr);
-  }
+}
   
-  .features .feature-card {
+.features .feature-card {
 	margin-bottom: 30px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -172,7 +323,14 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
-  }
+}
+
+.feature-art {
+	background-color: lightcyan;
+	margin: 10px;
+	width: 40%;
+	height: 50px;
+}
   
   .features .feature-card .feature-content {
 	padding: 30px 20px 40px 40px;
@@ -221,6 +379,11 @@
 	height: 100%;
   }
 
+.carousel-inner {
+	max-height: 100%;
+	/*height: 450px;*/
+  }
+  
 /*aqui comienza el estilo POSTWORK clase3*/
 
 .stories {
@@ -568,12 +731,15 @@
 		display: none;
 	} 
 */
-	main {
+	.main {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
 		margin-top: 130px;
 
 	}
 
-	h1 {
+	.h1 {
 		font-size: 30px;
 	}
 
@@ -618,6 +784,8 @@
 	.feature-image {
 		display: none;
 	}
+
+	
 
 	.carousel-inner .carousel-item {
 
